@@ -1,0 +1,258 @@
+body {
+    position: inherit;
+    background: url('universo.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.barra_superior {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 170px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 16px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 5px solid white;
+    margin-left: 0px;
+}
+
+.center {
+    text-align: center;
+}
+
+h1, .carrossel {
+    color: rgb(163, 219, 236);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 0px;
+    text-align: center;
+    
+}
+
+h2 {
+    color: rgb(250, 186, 186);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3{
+    color: rgb(163, 219, 236);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 625px;
+    font-weight: bold;
+}
+
+.portfolio {
+    color: rgb(163, 219, 236);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 625px;
+    font-weight: bold;
+    background-color: rgba(154, 93, 233, 0.8);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+footer { 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+.p_footer {
+    margin: 20px 20px;
+    padding: 20px 30px;
+    text-align: center;
+    margin-left: -200px;
+    margin-right: -200px;
+}
+
+p{
+    color:white;
+    padding: 20px 30px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 20px;
+}
+
+.pagina1 {
+    background-color: rgba(154, 93, 233, 0.8);
+}
+
+.p_contato {
+    color: black;
+    
+    align-items: center;
+}
+
+
+input {
+    margin: auto;
+    border-radius: 20px;
+    display: inline-block;
+
+}
+
+.slider {
+    margin: 0 auto;
+    width: 760px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+    
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid rgb(60, 12, 116);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.manual-btn:not(last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover{
+    background-color: rgb(60, 12, 116);
+}
+
+#radio1:checked ~ .first {
+    margin-left:0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left:-50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left:-75%;
+}
+
+#radio5:checked ~ .first {
+    margin-left:-100%;
+}
+
+.videos {
+    
+    text-align: center;
+}
+
+form {
+    background-color: rgba(119, 74, 170, 0.8);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: inherit;
+    left: 50%;
+    top: 50%;
+    transform: translate(50% 50%);
+    margin-left: 400px;
+    border-radius: 20px;
+}
+
+.form_h3{
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form_contato {
+    width: 485px;
+    height: 45px;
+    border: 1px solid white;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.form_submit {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 0;
+}
+
+.form_submit [type=submit] :hover{
+    background-color: blueviolet;
+}
+
+.form_contato [type=text] :focus{
+    outline: 0;
+}
